@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>History 3816G / Digital Humanities 3902G</title>
+
+		<meta name="description" content="Introduction to Digital History">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>History 3816G / Digital Humanities 3902G:</h1>
+					<h3>Introduction to Digital History</h3>
+					<p>
+						<small>Tuesdays, 6pm</small>
+					</p>
+					<p>
+						<small>Room UC-222</small>
+					</p>
+
+				</section>
+
+				<section>
+					<h2>Contact me</h2>
+					<p>
+						Devon Elliott
+					</p>
+					<p>
+						delliot8@uwo.ca
+					</p>	
+					<p>
+						Office Hours: Tuesdays, 4:00 - 5:00pm, Lawson Hall Room 1208 or by appointment
+					</p>
+
+				</section>
+
+				<section>
+					<h2>Hack Western</h2>
+					<p>
+					March 27-29, 2015<br>
+					<a href="https://hackwestern.com/" target="_blank">https://hackwestern.com/</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Presentation</h2>
+					<p>Jessica<br>
+					Timeline JS<br>
+					<a href="http://timeline.knightlab.com/" target="_blank">http://timeline.knightlab.com/</a>
+					</p>
+				</section>
+	
+				<section>
+					<h2>Presentations</h2>
+					<p>Schedule:<br>
+					<a href="http://bit.ly/1KHe4G0" target="_blank">http://bit.ly/1KHe4G0</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Comparing: Evaluating Historical Websites</h2>
+
+					<p>
+						<b>Readings:</b><br>
+						<ul>
+						<li>Rosenzweig, <a href="http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=6" target="_blank">“Scarcity or Abundance”</a></li>
+						<li>Cohen & Rosenzweig, <a href="http://chnm.gmu.edu/digitalhistory/copyright/" target="_blank">“Owning the Past”</a></li>
+						</ul>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Comparing: Evaluating Historical Websites</h2>
+
+					<p>
+						<b>Technology:</b><br>
+						<ul>
+						<li>batch downloading sources with wget and curl</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>Scarcity or Abudance</h2>
+					<p>
+					<ul>
+					<li class="fragment">How have historians worked under conditions of scarcity? What are some of those limitations?</li>
+					<li class="fragment">What are the promises and perils of working within conditions of abundance?</li>
+					</ul>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Copyright</h2>
+					<p>
+					<ul>
+					<li class="fragment">Copyright vs. public domain</li>
+					<li class="fragment">What is the DMCA?</li>
+					<li class="fragment">What are copyleft, Creative Commons, and other alternatives to copyright?</li>
+					</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>Unix-like Systems</h2>
+
+					<p>
+					<ul>
+					<li>Text-based</li>
+					<li>Command line interface</li>
+					<li>Many tools that each do specific jobs</li>
+					<li>Hierarchical file system</li>
+					<li>Treats processes like files</li>
+					<li>Use of pipes to string tools together</li>
+					<li>Linux most popular clone today; Macs are similar to Linux</li>
+					</ul>
+					</p>
+				</section>
+				
+				
+
+				<section>
+					<h2>INTERMISSION</h2>
+					<img src="./images/intermission_06.jpg">
+				</section>
+
+				<section>
+					<h2>Command Line</h2>
+					<p>Macs: Use the Spotlight Search, and type <b>Terminal</b>. These computers are packaged with a terminal interface.</p>
+					<p>Windows: Find the Command Prompt. For Win8+, go to <b>Apps</b>, then <b>Windows System</b>, then <b>Command Prompt</b>. You can also try searching for <b>cmd</b> in the Search Box. For earlier versions of Windows, you'll have to click <b>Start</b>, <b>All Programs</b>, <b>Accessories</b>, <b>Command Prompt</b>.
+					</p>
+				</section>
+
+				<section>
+					<h2>curl and wget</h2>
+					<p>On a Mac, in Terminal, type: <b>man curl</b>
+					</p>
+					<p>On a PC, but you can add it by visiting the cURL website at <a href="http://curl.haxx.se/download.html" target="_blank">http://curl.haxx.se/download.html</a> but you'll have to choose the correct platform and processor. You can download it and add it to your <b>C:/Windows</b> directory, and curl should be executable from your command prompt.</p>
+				</section>
+				
+				<section>
+					<h2>Package installers for Macs</h2>
+					<p>
+					<a href="http://brew.sh/" target="_blank">http://brew.sh/</a><br><br>
+					In your Terminal, enter:<br>
+					ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+					</p>
+					<p>Now type <b>brew doctor</b> and hit <b>Enter</b>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Installing Wget</h2>
+					<p>With the package installer added to Macs, we can add wget by typing <b>brew install wget</b> and pressing <b>Enter</b>.</p>
+					<p>For Windows PCs, you'll have to download and add <b>wget.exe</b> to your <b>C:/Windows</b> directory. Go to:<br>
+					<a href="http://users.ugent.be/~bpuype/wget/" target="_blank">http://users.ugent.be/~bpuype/wget/</a>
+					</p>
+					<p>When you think you have wget added, type <b>wget</b> and press <b>Enter</b>. You should get a response that says <b>wget: missing URL</b> If you don't see that, let me know.
+					</p>
+				</section>
+
+				<section>
+					<h2>Wget</h2>
+					<p>
+					Enter <b>wget -h</b> to see the options for wget.
+					</p>
+					<p>Enter <b>mkdir wget-activehistory</b> and press <b>Enter</b>. This should create a directory called <b>wget-activehistory</b>. To change to that directory, type <b>cd wget-activehistroy</b> and press <b>Enter</b>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Wget</h2>
+					<p>
+					<b>wget [options] [URL]</b>
+					</p>
+					<p>
+					<b>wget -r --no-parent -w 2 --limit-rate=20k http://activehistory.ca/papers/</b>
+					</p>
+				</section>
+
+				<section>
+					<h2>Wget with the Internet Archive</h2>
+					<p>
+					Open a new Terminal or Command prompt. Create a directory called <b>wget-internetarchive</b>.
+					
+					<p>
+					In your browswer, start with the <b>Advanced Search</b><br>
+					<a href="http://archive.org/advancedsearch.php" target="_blank">http://archive.org/advancedsearch.php</a>
+					</p>
+
+					<p>
+					Enter <b>new york clipper</b> in the Query box, select <b>identifier</b> for the "Fields to return", and sort by <b>identifier asc</b>. Choose the <b>CSV</b> file format, and click <b>Search</b>. This should save a <b>search.csv</b> file to your computer, likely in your Downloads folder. Drag it into your <b>wget-internetarchive</b> folder.</b>
+				</section>
+				
+				<section>
+					<h2>Wget with the Internet Archive</h2>
+					<p>
+					Rename the <b>search.csv</b> file to <b>identifier.txt</b> and then open it with Notepad or TextEdit. You should see a list starting with <b>"identifier"</b>. We want to erase all the quotation marks, and that first line. Then save the file. Make sure there isn't an empty line at the beginning after you erase <b>"identifier"</b>. To erase the quotation marks, use ctrl-f and put the " in the search field. Then replace all with nothing.</p>
+					
+					
+				</section>
+
+				<section>
+					<h2>Wget with the Internet Archive</h2>
+					<p>
+					In Terminal or Command Prompt, change to your <b>wget-internetarchive</b> directory. Now run wget with the following:<br>
+<b>wget -r -H -nc -np -nH --cut-dirs=2 -A .pdf,.txt -e robots=off -l1 -i ./identifier.txt -B 'http://archive.org/download/'</b>
+					</p>
+				</section>
+
+				<section>
+					<h2>Query Structure</h2>
+					<p>
+					<a href="http://blog.archive.org/2011/03/31/how-archive-org-items-are-structured/" target="_blank">http://blog.archive.org/2011/03/31/how-archive-org-items-are-structured/</a>
+					</p>
+				</section>
+
+
+				
+
+								
+				<section>
+					<h2>No class next week!</h2>
+					<p>
+						Have a great reading week!
+					</p>
+					<p>
+						See you on Feb. 24.
+					</p>
+					<p>
+						Contact me at <a href="mailto:delliot8@uwo.ca">delliot8@uwo.ca</a> or stop by Lawson Hall Room 1208 on Tuesdays, 4:00-5:00. I'm also available before and after class on Tuesdays, or by appointment.
+					</p>
+				</section>
+						
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>History 3816G / Digital Humanities 3902G</title>
+
+		<meta name="description" content="Introduction to Digital History">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>History 3816G / Digital Humanities 3902G:</h1>
+					<h3>Introduction to Digital History</h3>
+					<p>
+						<small>Tuesdays, 6pm</small>
+					</p>
+					<p>
+						<small>Room UC-222</small>
+					</p>
+
+				</section>
+
+				<section>
+					<h2>Contact me</h2>
+					<p>
+						Devon Elliott
+					</p>
+					<p>
+						delliot8@uwo.ca
+					</p>	
+					<p>
+						Office Hours: Tuesdays, 4:00 - 5:00pm, SSC 1004 or by appointment
+					</p>
+
+				</section>
+
+				<section>
+					<h2>Presentation</h2>
+					<p>Karen<br>
+					Map Warper<br>
+					<a href="https://mapwarper.net/" target="_blank">https://mapwarper.net/</a>
+					</p>
+				</section>
+	
+				<section>
+					<h2>Presentations</h2>
+					<p>Schedule:<br>
+					<a href="http://bit.ly/1KHe4G0" target="_blank">http://bit.ly/1KHe4G0</a>
+					</p>
+				</section>
+
+				<section>
+					<h2>Representing: Processing Archival Photos</h2>
+
+					<p>
+						<b>Readings:</b><br>
+						<ul>
+						<li>Posner, “Batch-Processing”</li> 							<li>Underwood, “Challenges”</li>
+						</ul>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Representing: Processing Archival Photos</h2>
+
+					<p>
+						<b>Technology:</b><br>
+						<ul>
+						<li>Optical Character Recognition (OCR)</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>OCR - Optical Character Recognition</h2>
+					<p class="fragment">"You can't grep dead trees."</p>
+				</section>
+
+				<section>
+					<section>
+					<h2>Software Options</h2>
+					<p>ABBYY Finereader</p>
+					<p><a href="http://finereader.abbyy.com/" target="_blank">http://finereader.abbyy.com/</a></p>
+					<p><a href="http://archive.org/details/Clipper64-1916-03" target="_blank">Internet Archive example</a></p>
+					</section>
+					<section>
+					<p>Adobe Acrobat</p>
+					<p>On the school's computers in labs -- you can scan documents and OCR them, or load a file and OCR it.</p>
+					<a href="http://www.adobe.com/ca/products/acrobat/convert-jpeg-scan-ocr-to-pdf.html" target="_blank">http://www.adobe.com/ca/products/acrobat/convert-jpeg-scan-ocr-to-pdf.html</a>
+					</section>
+					<section>
+					<p>Tesseract</p>
+					<p>Started by HP, adopted by Google -- free and open source.</p>
+					<a href="https://code.google.com/p/tesseract-ocr/" target="_blank">https://code.google.com/p/tesseract-ocr/</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Burst Documents</h2>
+					<p>Break up a large file into smaller, more manageable parts. These might be into individual pages of a document, or by the number of lines.</p>
+					<p>This is easier to do on a Mac, or on other Unix-based machines (computers running a version of Linux). Windows PCs are a little trickier.</p>
+				</section>
+
+				<section>
+					<h2>Get PDFs from the Internet Archive</h2>
+					<p>Save the PDF files of the New York Clipper issues you've got.</p>
+					<a href="http://archive.org/details/Clipper64-1916-03" target="_blank">Internet Archive example</a>
+				</section>
+				
+				<section>
+				<h2>If you're using a Windows PC</h2>
+				<a href="http://www.ghostscript.com/download/gsdnld.html" target="_blank">http://www.ghostscript.com/download/gsdnld.html</a>
+				</section>
+
+				<section>
+				<h2>On a Mac</h2>
+				<ol>
+					<li>Click on Spotlight (magnifying glass in the top-right corner of the screen).</li>
+					<li>Type <i>Automator</i></li>
+					<li>Click on <b>Automator</b>.</li>
+				</ol>
+				</section>
+
+				<section>
+					<h2>Back to Windows PCs</h2>
+					<p>Open a Command Prompt. Click Start > Accessories > Command Prompt.</p>
+					<p><small>C:\Program Files\gs\gs9.10\bin>gswin64c -dNOPAUSE -o "C:\Users\WinMachine\Documents\NewYorkClipper\clipper-1914-01\clipper-1914-01-%03d.png" -sDEVICE=png16m -r300 "C:\Users\WinMachine\Documents\NewYorkClipper\clipper-1914-01\clipper61-1914-01.pdf"</small></p>
+				</section>
+
+				<section>
+					<h2>Get Tesseract</h2>
+					<p> For Windows PCs - go to the following site, download and open <b>tesseract-ocr-setup-3.02.02.exe</b>.</p>
+					<a href="https://code.google.com/p/tesseract-ocr/downloads/list" target="_blank">https://code.google.com/p/tesseract-ocr/downloads/list</a>
+				</section>
+
+				<section>
+					<h2>On a MAC</h2>
+					<p>Click on your Spotlight icon (the little magnifying glass in the top-right corner. Type <b>Terminal</b>. One of the options should be called that, click it to open a terminal.<p>
+					<p>Go to <a href="http://brew.sh/" target="_blank">http://brew.sh/</a> and copy the install code and paste it into the Terminal window. The install code is:</p>
+					<p><b>ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"</b></p>
+				</section>
+
+				<section>
+					<h2>Install Tesseract on MAC</h2>
+					<p>In the Terminal, type <b>brew install tesseract</b></p>
+				</section>
+
+				<section>
+					<h2>Run Tesseract</h2>
+					<p>Go to the Command Prompt or Terminal
+					<p>At the Command Prompt or in Terminal, type <b>tesseract</b> and press the Space Bar, and then click and drag one of your png files onto that command line. Alternatively, you can enter the directory path and file name of one of the .PNG files. Follow this with a space, and type the name of the file again WITHOUT the .PNG.</p>
+					<p>It should look something like this: <b><small>tesseract /Users/devonelliott/Documents/NewYorkClipper/clipper61-1914-01-003.png /Users/devonelliott/Documents/NewYorkClipper/clipper61-1914-01-003</small></b> on a Mac, or the following on a Windows PC <b><small>tesseract C:\Users\devonelliott\Documents\NewYorkClipper\clipper61-1914-01-003.png C:\Users\devonelliott\Documents\NewYorkClipper\clipper61-1914-01-003</small></b></p>
+				</section>
+
+				<section>
+					<h2>TXT Files</h2>
+					<p>That should generate a .TXT file that is the OCR results of that page. Open it and see how well (or poorly) it did.</p>
+				</section>
+
+				<section>
+					<h2>Mathematica</h2>
+					<p>TextRecognize</p>
+				</section>
+
+				
+						
+				<section>
+					<h2>Have a great week!</h2>
+					<p>
+						See you on March 17.
+					</p>
+					<p>
+						Contact me at <a href="mailto:delliot8@uwo.ca">delliot8@uwo.ca</a> or stop by SSC 1004 on Tuesdays, 4:00-5:00. I'm also available before and after class on Tuesdays, or by appointment.
+					</p>
+				</section>
+						
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
